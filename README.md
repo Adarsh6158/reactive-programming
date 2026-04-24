@@ -1,57 +1,17 @@
 # Spring Boot WebFlux Reactive Application
 
-## 🏗️ Architecture
-
-<img width="602" height="710" alt="image" src="https://github.com/user-attachments/assets/4f8684dd-6a7f-4db2-be7c-0d8a89cb7628" />
-
+<p align="center">
+  <img src="https://img.shields.io/badge/Architecture-Reactive%20WebFlux-blue" />
+  <img src="https://img.shields.io/badge/Backend-Spring%20Boot%203-green" />
+  <img src="https://img.shields.io/badge/Database-MongoDB-brightgreen" />
+  <img src="https://img.shields.io/badge/Programming-Java%2017-orange" />
+  <img src="https://img.shields.io/badge/Reactive-Project%20Reactor-purple" />
+</p>
 
 ### Reactive Request Processing Flow
 
-<img width="700" height="270" alt="image" src="https://github.com/user-attachments/assets/bb62b1b8-a482-4155-a7c5-dae07690db39" />
+<img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/c6747992-eed7-498f-8082-6f1fc0d52078" />
 
-
-## 🛠️ Technologies
-
-- **Java 17** - Latest LTS version with modern features
-- **Spring Boot 3.5.13** - Latest Spring Boot with WebFlux
-- **Spring WebFlux** - Reactive web framework
-- **Spring Data MongoDB Reactive** - Non-blocking database access
-- **Project Reactor** - Reactive library (Mono, Flux)
-- **Lombok** - Boilerplate reduction
-- **Maven** - Build tool
-
-## 📁 Project Structure
-
-```
-src/main/java/com/reactive/programming/practice/reactiveProgramming/
-├── model/
-│   └── Product.java                    # Domain model entity
-├── repository/
-│   └── ProductRepository.java          # ReactiveMongoRepository
-├── service/
-│   └── ProductService.java             # Business logic layer
-├── controller/
-│   ├── ProductController.java          # Annotation-based REST controller
-│   └── OperatorsController.java        # Reactor operators examples
-├── handler/
-│   └── ProductHandler.java             # Functional routing handlers
-├── exception/
-│   ├── GlobalExceptionHandler.java     # Global exception handling
-│   └── ProductNotFoundException.java    # Custom exception
-├── config/
-│   ├── WebFluxConfig.java              # Functional routing configuration
-│   └── WebClientConfig.java            # WebClient configuration
-├── client/
-│   └── ExternalApiClient.java          # WebClient examples
-├── util/
-│   └── OperatorsDemonstration.java     # Operators demonstration
-└── ReactiveProgrammingApplication.java # Main application class
-
-src/main/resources/
-└── application.properties               # Application configuration
-```
-
-## Getting Started
 
 ### Prerequisites
 
@@ -84,7 +44,7 @@ src/main/resources/
    - Swagger UI: http://localhost:8081/swagger-ui.html
    - API Docs: http://localhost:8081/v3/api-docs
 
-## 📚 API Documentation
+## API Documentation
 
 ### Endpoints Overview
 
@@ -269,7 +229,7 @@ curl "http://localhost:8080/api/v1/products/search?query=laptop"
 curl http://localhost:8080/api/v1/demo/map
 ```
 
-## 📖 Key Concepts
+## Key Concepts
 
 ### Reactive Streams
 
@@ -341,7 +301,7 @@ webClient.get()
     .timeout(Duration.ofSeconds(10))
 ```
 
-## 🎓 Q/A
+## Q/A
 
 ### 1. **Why Reactive Programming?**
 - Handle more concurrent connections with fewer threads
